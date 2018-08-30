@@ -1,0 +1,25 @@
+
+
+<div id="blurb-container">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus lectus et ligula suscipit rhoncus quis vel orci. Phasellus posuere ac arcu a dictum. In hac habitasse platea dictumst. Nulla facilisi. Vivamus finibus ut quam in auctor. Mauris condimentum accumsan felis ut scelerisque. Nulla hendrerit nisl ut metus ultricies, et posuere massa tincidunt. Aenean accumsan velit vel ligula pulvinar, nec aliquet velit feugiat. Maecenas vel mi nec quam rutrum mattis id sed enim.</p>
+</div>
+
+<div id="cabin-grid">
+  <%@cabins.each do |cabin|  %>
+    <article class="cabin-card">
+      <div class="carouselbox">
+        <ol class="content">
+          <%cabin.images.each do |image| %>
+            <li><%= image %></li>
+          <% end %>
+        </ol>
+      </div>
+
+
+
+      <%= cabin.images %>
+        <p><%=cabin.name%></p>
+    </article>
+
+  <% end %>
+</div>

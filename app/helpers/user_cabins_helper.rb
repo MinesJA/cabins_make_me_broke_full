@@ -1,0 +1,2 @@
+module UserCabinsHelper
+end

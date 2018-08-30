@@ -1,0 +1,2 @@
+class CabinsController < ApplicationController
+end

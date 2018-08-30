@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cabins Make Me Broke</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <input placeholder="search"/>
+    <button>Login/Register</button>
+    <div id="logo">
+      <img src="https://image.flaticon.com/icons/png/512/263/263484.png" alt="cabin" id="logoImage"/>
+      <h1>Check Out this Cabin</h1>
+    </div>
+
+    <%= render 'shared/navbar' %>
+
+    <div>
+
+    <%= yield %>
+  </body>
+</html>
